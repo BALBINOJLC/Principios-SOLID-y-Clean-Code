@@ -1,51 +1,45 @@
 (() => {
 
-    // arreglo de temperaturas celsius
-    const arrayOfNumsCelciu = [33.6, 12.34];
 
-    // Dirección ip del servidor
-    const ipServer = '123.123.123.123';
+    const arrayOfNumsCelsius = [33.6, 12.34];
 
-    // Listado de usuarios
-    const people = [{id: 1, email: 'fernando@google.com'},{ id: 2, email: 'juan@google.com' }, { id: 3, email: 'melissa@google.com' }];
+    const iptoServer = '123.123.123.123';
 
-    // Listado de emails de los usuarios
-    const emails = people.map( u => u.email );
+ 
+    const userList = [{id: 1, email: 'fernando@google.com'},{ id: 2, email: 'juan@google.com' }, { id: 3, email: 'melissa@google.com' }];
 
-    // Variables booleanas de un video juego
-    const jump = false;
-    const run = true;
-    const noTieneItems = true;
-    const loading = false;
 
-    // Otros ejercicios
-    // tiempo inicial
-    const start = new Date().getTime();
+    const userEmails = userList.map( user => user.email );
+
+
+    const canJump = false;
+    const canRun = true;
+    const hasItems = false;
+    const isLoading = false;
+
+
+    const startTime = new Date().getTime();
     //....
     // 3 doritos después
     //...
-    // Tiempo al final
-    const end = new Date().getTime() - start;
+    const endTime = new Date().getTime() - startTime;
 
 
-    // Funciones
-    // Obtiene los libros
-    function book() {
+    function getsbook() {
         throw new Error('Function not implemented.');
     }
 
-    // obtiene libros desde un URL
-    function BooksUrl( u: string) {
+    function getsBooksUrl( url: string) {
         throw new Error('Function not implemented.');
     }
     
-    // obtiene el área de un cuadrado basado en sus lados
-    function areaCuadrado( s: number ) {
+
+    function getSquareArea( side: number ) {
         throw new Error('Function not implemented.');
     }
 
-    // imprime el trabajo
-    function printJobIfJobIsActive() {
+
+    function printJob() {
         throw new Error('Function not implemented.');
     }
     
