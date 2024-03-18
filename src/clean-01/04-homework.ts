@@ -59,20 +59,30 @@
     let isThirdStepWorking = true;
     let isFourthStepWorking = true;
 
-    function workingSteps() {
-        if (!isFirstStepWorking) {
-            return 'First step broken.';
-        }
-        if (!isSecondStepWorking) {
-            return 'Second step broken.';
-        }
-        if (!isThirdStepWorking) {
-            return 'Third step broken.';
-        }
-        if (!isFourthStepWorking) {
-            return 'Fourth step broken.';
-        }
-        return 'Working properly!';
+    function workingSteps(): void | string {
+
+
+        //todo: manera que lo hizo fernando
+
+        if (!isFirstStepWorking) return 'First step broken.';
+        if (!isSecondStepWorking) return 'Second step broken.';
+        if (!isThirdStepWorking) return 'Third step broken.';
+        if (!isFourthStepWorking) return 'Fourth step broken.';
+
+
+        // if (!isFirstStepWorking) {
+        //     return 'First step broken.';
+        // }
+        // if (!isSecondStepWorking) {
+        //     return 'Second step broken.';
+        // }
+        // if (!isThirdStepWorking) {
+        //     return 'Third step broken.';
+        // }
+        // if (!isFourthStepWorking) {
+        //     return 'Fourth step broken.';
+        // }
+        // return 'Working properly!';
     }
 
     // isRedFruit
